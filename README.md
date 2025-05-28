@@ -5,6 +5,8 @@ Trajectories are computed assuming dry, ICAO standard atmosphere up to 80 km,
 on a non-rotating Earth. Projectile drag modelled using similitude factor 
 to the 1943 drag curve for rotating projectiles. 
 
+![GUI example](gui.png)
+
 ## Instruction
 
 ### Run GUI Independently
