@@ -1,0 +1,32 @@
+[tool.black]
+line-length = 120
+target-version = ['py312']
+include = '\.pyi?$'
+
+[project]
+name = "artillery_range_tables"
+dynamic = ["version"]
+authors = [{name="Jinpeng Zhai", email="914962409@qq.com"}]
+dependencies = [
+  "tabulate",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+description = "Python GUI tool to generate simplified range table for artilleries."
+license-files=["LICENSE"]
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+
+[project.gui-scripts]
+rangetables = "exterior_ballistics.gui:main"
+
+[project.optional-dependencies]
+gui = ["ttkbootstrap"]
+dev = ["ttkbootstrap", "auto-py-to-exe", "black"]
+
+[tool.setuptools.dynamic]
+version = {attr = "exterior_ballistics.__version__"}

@@ -1,0 +1,1 @@
+autopytoexe src/run_gui.py -c auto-py-to-exe.json
